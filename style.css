@@ -1,0 +1,227 @@
+body {
+  background-color: skyblue;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* NAVBAR */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #0099bd;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: skyblue;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: skyblue;
+  color: black;
+  text-align: center;
+}
+
+/* LINK STYLES */
+a:link {
+  color: black;
+  background-color: transparent;
+  font-family: "Work Sans", sans-serif;
+  text-decoration: underline;
+  text-align: center;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  font-family: "Work Sans", sans-serif;
+  text-decoration: underline;
+  text-align: center;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+  font-family: "Work Sans", sans-serif;
+  text-decoration: underline;
+  text-align: center;
+}
+
+a:active {
+  color: black;
+  background-color: transparent;
+  font-family: "Work Sans", sans-serif;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* PROGRAMMING PAGE */
+
+.lang {
+  padding: 10px;
+  border: 2px solid black;
+  font-size: 150%;
+  text-align: center;
+}
+
+.code-editor {
+  padding: 10px;
+  border: 2px solid black;
+  font-size: 150%;
+  text-align: center;
+}
+
+.programming {
+  font-size: 150%;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font: 10px;
+}
+
+/* CREDITS PAGE */
+.credits {
+  text-align: center;
+  font-size: 150%;
+}
+
+/* ABOUT PAGE */
+.about {
+  text-align: center;
+  font-size: 250%;
+}
+
+/* F1 PAGE */
+.f1 {
+  text-align: center;
+  font-size: 250%;
+  font-family: "Nunito Sans", sans-serif;
+  font: 10px;
+}
+
+/* TECH PAGE */
+.tech {
+  text-align: center;
+  font-size: 250%;
+  font-family: "Nunito Sans", sans-serif;
+  font: 10px;
+}
+
+/* PROJECTS PAGE */
+
+.projects {
+  text-align: center;
+  font-size: 250%;
+  font-family: "Nunito Sans", sans-serif;
+  font: 10px;
+}
