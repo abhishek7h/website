@@ -167,26 +167,11 @@ a:active {
 }
 
 /* PROGRAMMING PAGE */
-
-.lang {
-  padding: 10px;
-  border: 2px solid black;
-  font-size: 150%;
-  text-align: center;
-}
-
-.code-editor {
-  padding: 10px;
-  border: 2px solid black;
-  font-size: 150%;
-  text-align: center;
-}
-
 .programming {
-  font-size: 150%;
+  font-size: 220%;
   text-align: center;
   font-family: "Nunito Sans", sans-serif;
-  font: 10px;
+  font: 20px;
 }
 
 /* CREDITS PAGE */
